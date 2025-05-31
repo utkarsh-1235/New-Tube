@@ -1,11 +1,12 @@
 interface VideoPage{
-    params: {videoId: string}
+    params: Promise<{videoId: string}>
 }
 
-const page = ({params}: VideoPage)=>{
+const page = async({params}: VideoPage)=>{
+    const {videoId} = await params;
     return(
         <div>
-            videoId page: {params.videoId}
+            videoId page: {videoId};
         </div>
     )
 }

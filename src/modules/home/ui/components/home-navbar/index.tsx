@@ -15,9 +15,9 @@ export const HomeNavbar = () => {
 
                 {/* Right: Sidebar Trigger & Links */}
                 <div className="flex items-center gap-4">
-                    <SidebarProvider>
+                    {/* <SidebarProvider>
                         <SidebarTrigger />
-                    </SidebarProvider>
+                    </SidebarProvider> */}
                     <nav className="space-x-4 hidden md:block">
                         {/* <a href="/" className="hover:underline">Home</a>
                         <a href="/about" className="hover:underline">About</a>
